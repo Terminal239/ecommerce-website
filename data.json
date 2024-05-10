@@ -1,0 +1,513 @@
+[
+  {
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "The Fjallraven - Foldsack No. 1 Backpack is the ideal companion for both everyday use and outdoor adventures. Crafted with durable, water-resistant Vinylon F fabric, this backpack is built to withstand daily wear and tear. Its spacious main compartment comfortably fits a 15-inch laptop in a padded sleeve, ensuring your tech stays protected. Additional features include a front zippered pocket for quick-access items, side pockets for water bottles or umbrellas, and comfortable padded shoulder straps for effortless carrying. The classic design and timeless functionality make the Foldsack No. 1 a versatile choice for students, professionals, and outdoor enthusiasts alike.",
+    "features": [
+      "Durable Vinylon F fabric",
+      "Padded sleeve for 15-inch laptops",
+      "Spacious main compartment",
+      "Front zippered pocket",
+      "Side pockets for water bottles or umbrellas",
+      "Comfortable padded shoulder straps"
+    ],
+    "category": ["men's clothing"],
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 120
+    },
+    "reviews": [
+      {
+        "user": "John Doe",
+        "rating": 5,
+        "comment": "This backpack is perfect for my daily commute. It's stylish, comfortable, and fits all my essentials."
+      },
+      {
+        "user": "Jane Smith",
+        "rating": 4,
+        "comment": "Love the design and durability of this backpack. The laptop sleeve is a lifesaver."
+      },
+      {
+        "user": "David Lee",
+        "rating": 5,
+        "comment": "Great backpack for hiking and traveling. The water-resistant fabric is a huge plus."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mens Casual Premium Slim Fit T-Shirts ",
+    "price": 22.3,
+    "description": "Upgrade your casual wardrobe with these Mens Casual Premium Slim Fit T-Shirts. Crafted from a lightweight and soft fabric blend, these t-shirts offer both breathability and comfort for all-day wear. The slim-fitting style flatters your physique, while the contrast raglan long sleeves and three-button henley placket add a touch of modern flair. Whether you're heading to the gym, running errands, or relaxing at home, these versatile t-shirts are the perfect choice. The solid stitching and round neck ensure durability and a classic look.",
+    "features": ["Lightweight and soft fabric", "Slim-fitting style", "Contrast raglan long sleeves", "Three-button henley placket", "Round neck"],
+    "category": ["men's clothing"],
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 259
+    },
+    "reviews": [
+      {
+        "user": "Alex Kim",
+        "rating": 4,
+        "comment": "Comfortable and stylish t-shirts. The fit is perfect."
+      },
+      {
+        "user": "Sarah Jones",
+        "rating": 5,
+        "comment": "Great quality for the price. My husband loves these shirts."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Mens Cotton Jacket",
+    "price": 55.99,
+    "description": "Stay warm and stylish with this versatile Mens Cotton Jacket. Crafted from premium cotton, this jacket offers exceptional comfort and breathability, making it perfect for a variety of occasions. Whether you're navigating the urban jungle or exploring the great outdoors, this jacket will keep you protected from the elements. Its timeless design features a classic collar, button-up front, and multiple pockets for added convenience. The Mens Cotton Jacket is an essential addition to any man's wardrobe.",
+    "features": [
+      "Premium cotton fabric",
+      "Comfortable and breathable",
+      "Classic collar and button-up front",
+      "Multiple pockets for storage",
+      "Versatile for various occasions"
+    ],
+    "category": ["men's clothing"],
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 500
+    },
+    "reviews": [
+      {
+        "user": "Michael Brown",
+        "rating": 5,
+        "comment": "This jacket is a must-have for any man. It's stylish, comfortable, and well-made."
+      },
+      {
+        "user": "Jennifer Wilson",
+        "rating": 4,
+        "comment": "Bought this for my husband and he loves it. The fit is perfect and it's very versatile."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Mens Casual Slim Fit",
+    "price": 15.99,
+    "description": "Elevate your everyday style with these Mens Casual Slim Fit pants. Designed with a modern slim fit that flatters your silhouette, these pants offer both comfort and style. The versatile design makes them suitable for a variety of occasions, from casual outings to more formal events. Crafted from a soft and durable fabric blend, these pants ensure all-day comfort and lasting wear. Available in a range of colors to complement your individual style.",
+    "features": ["Modern slim fit", "Versatile design", "Soft and durable fabric", "Comfortable for all-day wear", "Available in multiple colors"],
+    "category": ["men's clothing"],
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+    "rating": {
+      "rate": 2.1,
+      "count": 430
+    },
+    "reviews": [
+      {
+        "user": "Mark Davis",
+        "rating": 3,
+        "comment": "The fit is a bit too slim for my liking, but the pants are comfortable."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+    "price": 695,
+    "description": "Embrace the mythical allure of the John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet. This exquisite bracelet features intricately detailed dragon stations crafted from a blend of gold and silver, exuding both elegance and strength. The Naga, inspired by the legendary water dragon that guards the ocean's pearl, symbolizes love, abundance, and protection. Wear this bracelet facing inward to attract prosperity and love, or outward for a shield of protection. The John Hardy Legends Naga Bracelet is a statement piece that adds a touch of luxury and mystique to any ensemble.",
+    "features": [
+      "Intricately detailed dragon stations",
+      "Gold and silver blend",
+      "Symbolizes love, abundance, and protection",
+      "Statement piece with mythical allure",
+      "Exquisite craftsmanship"
+    ],
+    "category": ["jewellery"],
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 400
+    },
+    "reviews": [
+      {
+        "user": "Emily Chen",
+        "rating": 5,
+        "comment": "This bracelet is absolutely stunning! The craftsmanship is exceptional and the design is both elegant and meaningful."
+      },
+      {
+        "user": "Sophia Patel",
+        "rating": 5,
+        "comment": "I love the symbolism behind the Naga dragon. This bracelet makes me feel empowered and protected."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Solid Gold Petite Micropave ",
+    "price": 168,
+    "description": "Indulge in the timeless elegance of the Solid Gold Petite Micropave. This delicate and sophisticated piece features a band of solid gold adorned with shimmering micropave diamonds, creating a captivating display of brilliance. Its petite size makes it perfect for everyday wear, adding a touch of luxury to any outfit. Whether worn alone or stacked with other rings, the Solid Gold Petite Micropave is a versatile and cherished addition to your jewelry collection.",
+    "features": [
+      "Solid gold band",
+      "Shimmering micropave diamonds",
+      "Delicate and sophisticated design",
+      "Perfect for everyday wear",
+      "Versatile for stacking or wearing alone"
+    ],
+    "category": ["jewellery"],
+    "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 70
+    },
+    "reviews": [
+      {
+        "user": "Olivia Rodriguez",
+        "rating": 4,
+        "comment": "This ring is so dainty and beautiful! I love the sparkle of the micropave diamonds."
+      },
+      {
+        "user": "Ava Williams",
+        "rating": 5,
+        "comment": "Perfect for everyday wear. It's simple yet elegant."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "White Gold Plated Princess",
+    "price": 9.99,
+    "description": "Celebrate love and commitment with the White Gold Plated Princess  ring. This classic and timeless piece features a stunning princess-cut cubic zirconia stone, exuding brilliance and fire. The white gold plating adds a touch of sophistication, making it the perfect choice for engagements, weddings, anniversaries, or any special occasion. Express your love and devotion with this exquisite ring that symbolizes eternal romance.",
+    "features": [
+      "White gold plating",
+      "Princess-cut cubic zirconia stone",
+      "Classic and timeless design",
+      "Perfect for special occasions",
+      "Symbol of love and commitment"
+    ],
+    "category": ["jewellery"],
+    "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 3,
+      "count": 400
+    },
+    "reviews": [
+      {
+        "user": "Isabella Brown",
+        "rating": 4,
+        "comment": "This ring is so beautiful and sparkly! It looks much more expensive than it is."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+    "price": 10.99,
+    "description": "Make a bold statement with these Pierced Owl Rose Gold Plated Stainless Steel Double Flared Tunnel Plug Earrings. Crafted from high-quality stainless steel with a rose gold plating, these earrings offer a stylish and edgy look. The double flared design ensures a secure and comfortable fit, while the rose gold finish adds a touch of warmth and femininity. Express your unique style and personality with these eye-catching earrings.",
+    "features": [
+      "Rose gold plated stainless steel",
+      "Double flared design for secure fit",
+      "Stylish and edgy look",
+      "High-quality materials",
+      "Comfortable for extended wear"
+    ],
+    "category": ["jewellery"],
+    "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+    "rating": {
+      "rate": 1.9,
+      "count": 100
+    },
+    "reviews": [
+      {
+        "user": "Mia Garcia",
+        "rating": 2,
+        "comment": "The earrings look nice, but the plating started to chip after a few wears."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+    "price": 64,
+    "description": "Expand your storage capacity with the WD 2TB Elements Portable External Hard Drive. This compact and lightweight hard drive offers ample space for your photos, videos, music, and documents. With USB 3.0 compatibility, you'll experience lightning-fast data transfer speeds, making it easy to back up your files or transfer large media files. The portable design allows you to take your important data wherever you go. The WD Elements Portable Hard Drive is a reliable and convenient solution for all your storage needs.",
+    "features": [
+      "2TB storage capacity",
+      "USB 3.0 compatibility for fast data transfer",
+      "Compact and lightweight design",
+      "Portable for on-the-go use",
+      "Reliable and durable"
+    ],
+    "category": ["electronics"],
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": {
+      "rate": 3.3,
+      "count": 203
+    },
+    "reviews": [
+      {
+        "user": "Ethan Rodriguez",
+        "rating": 4,
+        "comment": "Great portable hard drive for the price. It's fast and reliable."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+    "price": 109,
+    "description": "Upgrade your computer's performance with the SanDisk SSD PLUS 1TB Internal SSD. This solid-state drive offers lightning-fast boot-up and shutdown times, as well as accelerated application loading and response. With read/write speeds of up to 535MB/s/450MB/s, you'll experience a significant improvement in overall system performance. The SanDisk SSD PLUS is also incredibly reliable, ensuring the safety and integrity of your data. It's the perfect balance of performance and reliability for everyday computing tasks.",
+    "features": [
+      "1TB storage capacity",
+      "SATA III 6 Gb/s interface",
+      "Fast boot-up and shutdown times",
+      "Accelerated application performance",
+      "Reliable and durable"
+    ],
+    "category": ["electronics"],
+    "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 470
+    },
+    "reviews": [
+      {
+        "user": "Jackson Kim",
+        "rating": 4,
+        "comment": "This SSD significantly improved my computer's speed. Highly recommend!"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+    "price": 109,
+    "description": "Experience enhanced performance and reliability with the Silicon Power 256GB SSD. Featuring 3D NAND flash technology and SLC Cache, this SSD delivers exceptional transfer speeds, faster boot-up times, and improved overall system responsiveness. The 7mm slim design makes it suitable for ultrabooks and ultra-slim notebooks, while support for TRIM command, Garbage Collection, RAID, and ECC ensures optimized performance and data integrity. The Silicon Power SSD is a perfect choice for users seeking a performance boost for their laptops or desktops.",
+    "features": [
+      "256GB storage capacity",
+      "3D NAND flash technology",
+      "SLC Cache for performance boost",
+      "7mm slim design",
+      "Supports TRIM, Garbage Collection, RAID, and ECC"
+    ],
+    "category": ["electronics"],
+    "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 319
+    },
+    "reviews": [
+      {
+        "user": "Aiden Lee",
+        "rating": 5,
+        "comment": "This SSD is incredibly fast and reliable. My laptop boots up in seconds now."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+    "price": 114,
+    "description": "Expand your gaming library with the WD 4TB Gaming Drive. Designed specifically for PlayStation 4, this portable external hard drive offers ample storage space for your games, saves, and downloadable content. With its fast and easy setup, you can start playing your favorite games in no time. The sleek design and high capacity make it a perfect companion for your gaming console. Take your games wherever you go and enjoy seamless gameplay with the WD Gaming Drive.",
+    "features": ["4TB storage capacity", "Designed for PlayStation 4", "Fast and easy setup", "Sleek and portable design", "High-speed performance"],
+    "category": ["electronics"],
+    "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 400
+    },
+    "reviews": [
+      {
+        "user": "Lucas Smith",
+        "rating": 5,
+        "comment": "This gaming drive is a lifesaver! I can finally store all my PS4 games without worrying about running out of space."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+    "price": 599,
+    "description": "Immerse yourself in stunning visuals with the Acer SB220Q bi 21.5-inch Full HD monitor. Featuring a vibrant IPS panel with a 178-degree viewing angle, this monitor delivers accurate colors and crisp details from any perspective. The ultra-thin and zero-frame design provides a sleek and modern look, while the 4ms response time and Radeon FreeSync technology ensure smooth and tear-free gameplay. Whether you're working, watching movies, or gaming, the Acer SB220Q bi offers an exceptional viewing experience.",
+    "features": [
+      "21.5-inch Full HD IPS display",
+      "178-degree viewing angle",
+      "Ultra-thin and zero-frame design",
+      "4ms response time",
+      "Radeon FreeSync technology"
+    ],
+    "category": ["electronics"],
+    "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 250
+    },
+    "reviews": [
+      {
+        "user": "Sophia Patel",
+        "rating": 4,
+        "comment": "Great monitor for the price. The picture quality is excellent and the design is very sleek."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+    "price": 999.99,
+    "description": "Experience the ultimate gaming immersion with the Samsung CHG90 49-inch curved gaming monitor. This super ultra-wide monitor boasts a 32:9 aspect ratio, equivalent to two 27-inch screens side by side, providing an expansive field of view. The QLED technology with Quantum Dot ensures stunningly realistic and accurate colors, while HDR support enhances contrast and detail. With a 144Hz refresh rate and 1ms response time, you'll enjoy smooth and responsive gameplay without motion blur or ghosting. The Samsung CHG90 is the perfect choice for serious gamers who demand the best.",
+    "features": [
+      "49-inch super ultra-wide curved display",
+      "32:9 aspect ratio",
+      "QLED technology with Quantum Dot",
+      "HDR support",
+      "144Hz refresh rate and 1ms response time"
+    ],
+    "category": ["electronics"],
+    "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 2.2,
+      "count": 140
+    },
+    "reviews": [
+      {
+        "user": "Jacob White",
+        "rating": 5,
+        "comment": "This monitor is incredible! The curved screen and ultra-wide format provide an immersive gaming experience like no other."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+    "price": 56.99,
+    "description": "Conquer the slopes in style and comfort with the BIYLACLESEN Women's 3-in-1 Snowboard Jacket. This versatile jacket features a waterproof and breathable outer shell and a removable inner fleece liner, providing adaptable warmth and protection in various weather conditions. The adjustable hood, cuffs, and drawstring waist allow for a customizable fit, while multiple zippered pockets offer ample storage for your essentials. Whether you're snowboarding, skiing, or simply enjoying the winter outdoors, this 3-in-1 jacket is your perfect companion.",
+    "features": [
+      "Waterproof and breathable outer shell",
+      "Removable inner fleece liner",
+      "Adjustable hood, cuffs, and drawstring waist",
+      "Multiple zippered pockets",
+      "Versatile for various winter activities"
+    ],
+    "category": ["women's clothing"],
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 2.6,
+      "count": 235
+    },
+    "reviews": [
+      {
+        "user": "Isabella Garcia",
+        "rating": 4,
+        "comment": "Love the versatility of this jacket. It's perfect for both mild and cold weather."
+      }
+    ]
+  },
+
+  {
+    "id": 16,
+    "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+    "price": 29.95,
+    "description": "Channel your inner rebel with the Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket. This stylish jacket features a classic moto design with a removable hood, offering versatile style options. The faux leather material provides a sleek and edgy look, while the soft lining ensures comfort and warmth. With multiple pockets and zippered closures, this jacket combines fashion and functionality. Whether you're cruising on your motorcycle or adding a touch of attitude to your everyday outfit, the Lock and Love Moto Biker Jacket is a statement piece that exudes confidence.",
+    "features": ["Removable hood", "Faux leather material", "Classic moto design", "Soft lining for comfort", "Multiple pockets and zippered closures"],
+    "category": ["women's clothing"],
+    "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+    "rating": {
+      "rate": 2.9,
+      "count": 340
+    },
+    "reviews": [
+      {
+        "user": "Mia Rodriguez",
+        "rating": 4,
+        "comment": "This jacket is so cool and stylish! I love the removable hood and the faux leather looks great."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+    "price": 39.99,
+    "description": "Stay dry and comfortable in any weather with the Rain Jacket Women Windbreaker. This stylish and functional raincoat features a striped design and a waterproof construction to keep you protected from the elements. The adjustable drawstring waist and hood provide a customizable fit, while the button and zipper front closure ensures extra protection. With its lightweight and breathable design, this windbreaker is perfect for outdoor activities, commuting, or casual wear. Stay prepared for any weather adventure with the Rain Jacket Women Windbreaker.",
+    "features": [
+      "Waterproof construction",
+      "Striped design",
+      "Adjustable drawstring waist and hood",
+      "Button and zipper front closure",
+      "Lightweight and breathable"
+    ],
+    "category": ["women's clothing"],
+    "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+    "rating": {
+      "rate": 3.8,
+      "count": 679
+    },
+    "reviews": [
+      {
+        "user": "Ava Johnson",
+        "rating": 4,
+        "comment": "This raincoat is perfect for rainy days. It's stylish, comfortable, and keeps me dry."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+    "price": 9.85,
+    "description": "Elevate your casual style with the MBJ Women's Solid Short Sleeve Boat Neck V-Neck T-Shirt. This versatile and comfortable tee features a flattering boat neck and a subtle V-neck detail, adding a touch of sophistication to your everyday look. Crafted from a soft and stretchy fabric blend, it offers all-day comfort and a perfect fit. The solid color options make it easy to pair with jeans, skirts, or shorts for a variety of stylish ensembles.  ",
+    "features": ["Boat neck and V-neck detail", "Soft and stretchy fabric", "Flattering fit", "Solid color options", "Versatile for casual wear"],
+    "category": ["women's clothing"],
+    "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+    "rating": {
+      "rate": 4.7,
+      "count": 130
+    },
+    "reviews": [
+      {
+        "user": "Emily Davis",
+        "rating": 5,
+        "comment": "Love this t-shirt! It's so comfortable and the boat neck is very flattering."
+      }
+    ]
+  },
+
+  {
+    "id": 19,
+    "title": "Opna Women's Short Sleeve Moisture",
+    "price": 7.95,
+    "description": "Stay cool and dry during your workouts with the Opna Women's Short Sleeve Moisture-Wicking T-Shirt. This performance tee is designed to keep you comfortable and focused on your fitness goals. The moisture-wicking fabric draws sweat away from your skin, keeping you dry and comfortable even during intense activities. The lightweight and breathable material ensures optimal airflow, while the comfortable V-neck collar and slim fit provide a flattering silhouette. The Opna Women's Short Sleeve Moisture-Wicking T-Shirt is a must-have for any active woman.",
+    "features": ["Moisture-wicking fabric", "Lightweight and breathable", "Comfortable V-neck collar", "Slim fit", "Perfect for workouts and activewear"],
+    "category": ["women's clothing"],
+    "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 146
+    },
+    "reviews": [
+      {
+        "user": "Olivia Wilson",
+        "rating": 5,
+        "comment": "This shirt is perfect for running. It keeps me cool and dry even on hot days."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "DANVOUY Womens T Shirt Casual Cotton Short",
+    "price": 12.99,
+    "description": "Embrace effortless style with the DANVOUY Women's T-Shirt. This casual cotton tee is perfect for everyday wear, offering comfort and versatility. The soft and stretchy fabric ensures a comfortable fit, while the short sleeves and V-neckline provide a classic and flattering look. The letter print adds a touch of personality, making it a great choice for casual outings, running errands, or relaxing at home. The DANVOUY Women's T-Shirt is a wardrobe staple that you'll reach for again and again.",
+    "features": ["Casual cotton fabric", "Short sleeves and V-neckline", "Soft and stretchy", "Letter print detail", "Versatile for everyday wear"],
+    "category": ["women's clothing"],
+    "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 145
+    },
+    "reviews": [
+      {
+        "user": "Sophia Brown",
+        "rating": 4,
+        "comment": "This t-shirt is so comfortable and easy to wear. I love the simple yet stylish design."
+      }
+    ]
+  }
+]
