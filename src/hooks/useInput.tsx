@@ -5,6 +5,7 @@ interface Props {
   type: HTMLInputTypeAttribute;
   className?: string;
   placeholder: string;
+  isError: boolean;
 }
 
 interface Export {
@@ -12,11 +13,11 @@ interface Export {
   data: string;
 }
 
-const useInput = ({ name, type, placeholder, className }: Props): Export => {
+const useInput = ({ isError, name, type, placeholder, className }: Props): Export => {
   const [data, setData] = useState("");
   const element = (
     <input
-      className={`mb-2 w-full rounded border px-4 py-2 text-base shadow-sm placeholder:text-sm last-of-type:mb-0 md:p-2 ${className}`}
+      className={`mb-2 w-full rounded border px-4 py-2 text-base shadow-sm placeholder:text-sm last-of-type:mb-0 md:p-2 ${className} ${isError ? "border-red-500 text-red-500" : ""}`}
       type={type}
       name={name}
       value={data}

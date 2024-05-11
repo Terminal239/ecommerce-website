@@ -2,12 +2,12 @@ import { AxiosError } from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { onUserLogin, onUserSignUp } from "../../../services/fetch";
+import { useAppDispatch } from "../../store/hooks";
 import { fetchCart } from "../../store/reducers/cartReducer";
 import { setUser } from "../../store/reducers/userReducer";
 import Button from "../Resuable/Button";
 import Login from "./Login";
 import SignUp from "./SignUp";
-import { useAppDispatch } from "../../store/hooks";
 
 export interface FormData {
   username: string;
@@ -25,6 +25,7 @@ const Auth = () => {
     username: "",
   });
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement> | React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -32,13 +33,19 @@ const Auth = () => {
     try {
       setLoading(true);
 
+      const { email, password, username } = formData;
+
       if (isLogin) {
-        const response = await onUserLogin(formData.email, formData.password);
+        if (!email || !password) throw Error("Input fields cannot be blank");
+
+        const response = await onUserLogin(email, password);
         localStorage.setItem("user", JSON.stringify(response));
         dispatch(setUser(response));
         dispatch(fetchCart(response.token));
       } else {
-        const response = await onUserSignUp(formData.email, formData.password, formData.username);
+        if (!email || !password || !username) throw Error("Input fields cannot be blank");
+
+        const response = await onUserSignUp(email, password, username);
         localStorage.setItem("user", JSON.stringify(response));
         dispatch(setUser(response));
         dispatch(fetchCart(response.token));
@@ -47,7 +54,20 @@ const Auth = () => {
       navigate("/products");
       setLoading(false);
     } catch (error) {
-      if (error instanceof AxiosError) console.log(error.message);
+      if (error instanceof Error) {
+        setError(error.message);
+        setTimeout(() => {
+          setError("");
+        }, 5000);
+      }
+
+      if (error instanceof AxiosError) {
+        setError(error.response?.data.error);
+        setTimeout(() => {
+          setError("");
+        }, 5000);
+      }
+      setLoading(false);
     }
   };
 
@@ -57,7 +77,8 @@ const Auth = () => {
       <div className="mx-4 flex flex-col rounded border p-6 shadow md:size-[416px] md:p-8">
         <h2 className="mb-4 font-bold md:text-2xl">{isLogin ? "Login" : "Sign Up"}</h2>
         <form onSubmit={onSubmit} className="mb-12">
-          {isLogin ? <Login setData={setFormData} /> : <SignUp setData={setFormData} />}
+          {isLogin ? <Login error={error.length > 0} setData={setFormData} /> : <SignUp error={error.length > 0} setData={setFormData} />}
+          <p className="mt-2 text-sm font-medium text-red-500">{error}</p>
         </form>
         <div className="mt-auto flex flex-col gap-4">
           <Button disabled={loading} onClick={onSubmit} type="primary">
