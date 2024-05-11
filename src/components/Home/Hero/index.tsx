@@ -18,11 +18,11 @@ const Hero = () => {
         <div className="flex-1">
           <picture>
             <source media="(min-width:1024px)" srcSet="/hero-image.png" />
-            <img src="/hero-image-mobile.png" alt="Flowers" className="mx-auto md:w-4/5 lg:w-full" />
+            <img width={200} height={300} src="/hero-image-mobile.png" alt="Flowers" className="mx-auto md:w-4/5 lg:w-full" />
           </picture>
         </div>
       </MaxWidthWrapper>
-      <img src="/waves.svg" alt="waves" className="-mb-1 w-full" />
+      <img width={300} height={30} src="/waves.svg" alt="waves" className="-mb-1 w-full" />
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://192.168.1.12:5000";
+const BASE_URL = "";
 
 const getProducts = async (): Promise<Product[]> => {
   const response = await axios.get<Product[]>(`${BASE_URL}/api/products`);
@@ -16,7 +16,7 @@ const getProduct = async (id: string): Promise<Product> => {
   return response.data;
 };
 
-const getCategories = async (): Promise<string[]> => {
+const getCategoryList = async (): Promise<string[]> => {
   const response = await axios.get<string[]>(`${BASE_URL}/api/categories`);
   return response.data;
 };
@@ -56,4 +56,4 @@ const onUserSignUp = async (email: string, password: string, username: string): 
   return response.data;
 };
 
-export { getBestSellers, getCartItems, getCategories, getProduct, getProducts, onAddToCart, onDeleteFromCart, onItemCountDecrement, onItemCountIncrement, onUserLogin, onUserSignUp };
+export { getBestSellers, getCartItems, getCategoryList, getProduct, getProducts, onAddToCart, onDeleteFromCart, onItemCountDecrement, onItemCountIncrement, onUserLogin, onUserSignUp };

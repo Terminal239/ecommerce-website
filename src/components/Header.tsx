@@ -104,7 +104,7 @@ const Header = () => {
             <span className="font-bold">({cart.length})</span>
           </button>
         </div>
-        <button onClick={() => setshowMobileNav(true)} className="size-8 rounded border md:size-12 lg:hidden">
+        <button aria-label="Navigation menu button" onClick={() => setshowMobileNav(true)} className="size-8 rounded border md:size-12 lg:hidden">
           <i className="fa-solid fa-bars text-xl md:text-2xl"></i>
         </button>
       </div>

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { formatCurrency } from "../../utils/helper";
-import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { deleteItemFromCart, getCart } from "../store/reducers/cartReducer";
 import { getUser } from "../store/reducers/userReducer";
 import QuantityBox from "./Products/QuantityBox";
 import Button from "./Resuable/Button";
+import { useAppSelector, useAppDispatch } from "../store/hooks";
 
 const Cart = () => {
   const user = useAppSelector(getUser);

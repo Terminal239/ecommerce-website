@@ -32,7 +32,7 @@ const features: Benefit[] = [
 const Benefits = () => {
   return (
     <section className="mb-32 md:mb-48">
-      <img src="/waves-2.svg" alt="waves" className="mb-32 w-full" />
+      <img width={300} height={30} src="/waves-2.svg" alt="waves" className="mb-32 w-full" />
       <MaxWidthWrapper className="px-4 md:px-8">
         <div className="mb-16 text-center lg:mb-20">
           <h2 className="mb-4 md:mb-6">Why Shop With Us?</h2>

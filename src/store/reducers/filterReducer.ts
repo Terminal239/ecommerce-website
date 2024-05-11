@@ -1,9 +1,11 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { getCategoryList } from "../../../services/fetch";
 import { RootState } from "../store";
 
 interface Filter {
   searchTerm: string;
   categories: string[];
+  selected: string[];
   ratings: number[];
   price: {
     max: number;
@@ -14,12 +16,15 @@ interface Filter {
 const initialFilter: Filter = {
   searchTerm: "",
   categories: [],
+  selected: [],
   ratings: [],
   price: {
     max: Infinity,
     min: 0,
   },
 };
+
+export const fetchCategories = createAsyncThunk("categories/fetchAll", getCategoryList);
 
 const filterSlice = createSlice({
   name: "filter",
@@ -35,9 +40,9 @@ const filterSlice = createSlice({
     updateCategories(state, action: PayloadAction<string>) {
       const category = action.payload;
 
-      const index = state.categories.indexOf(category);
-      if (index !== -1) state.categories.splice(index, 1);
-      else state.categories.push(category);
+      const index = state.selected.indexOf(category);
+      if (index !== -1) state.selected.splice(index, 1);
+      else state.selected.push(category);
     },
     updateRange(state, action: PayloadAction<{ name: "max" | "min"; value: number }>) {
       const { name, value } = action.payload;
@@ -47,14 +52,19 @@ const filterSlice = createSlice({
       const term = action.payload;
       state.searchTerm = term;
     },
-    resetFilter(state) {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      state = initialFilter;
+    resetFilter() {
+      return initialFilter;
     },
+  },
+  extraReducers(builder) {
+    builder.addCase(fetchCategories.fulfilled, (state, action: PayloadAction<string[]>) => {
+      state.categories = action.payload;
+    });
   },
 });
 
 export const getCategories = (state: RootState) => state.filter.categories;
+export const getSelected = (state: RootState) => state.filter.selected;
 export const getFilter = (state: RootState) => state.filter;
 
 export const { updateSearchTerm, updateRatings, updateCategories, updateRange, resetFilter } = filterSlice.actions;

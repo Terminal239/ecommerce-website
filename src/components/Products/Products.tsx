@@ -15,10 +15,10 @@ const Products = () => {
   const filtered = useMemo(
     () =>
       products.filter((product) => {
-        const { searchTerm, categories, ratings, price } = filter;
+        const { searchTerm, selected, ratings, price } = filter;
 
         if (!product.title.toLowerCase().startsWith(searchTerm.toLowerCase())) return;
-        if (categories.length !== 0 && !categories.some((category) => product.category.includes(category))) return;
+        if (selected.length !== 0 && !selected.some((category) => product.category.includes(category))) return;
         if (ratings.length !== 0 && !ratings.includes(Math.round(product.rating.rate))) return;
         if (!(price.min <= product.discountedPrice && product.discountedPrice <= price.max)) return;
 

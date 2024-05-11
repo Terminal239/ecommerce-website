@@ -67,7 +67,7 @@ const SocialProof = () => {
         </div>
       </MaxWidthWrapper>
       <img src="/waves-3.svg" alt="waves" className="-mb-1 hidden w-full md:inline" />
-      <img src="/waves-4.svg" alt="waves" className="-mb-1 w-full md:hidden" />
+      <img width={300} height={30} src="/waves-4.svg" alt="waves" className="-mb-1 w-full md:hidden" />
     </section>
   );
 };

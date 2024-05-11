@@ -2,12 +2,12 @@ import { AxiosError } from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { onUserLogin, onUserSignUp } from "../../../services/fetch";
-import { useAppDispatch } from "../../store/hooks";
 import { fetchCart } from "../../store/reducers/cartReducer";
 import { setUser } from "../../store/reducers/userReducer";
 import Button from "../Resuable/Button";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import { useAppDispatch } from "../../store/hooks";
 
 export interface FormData {
   username: string;

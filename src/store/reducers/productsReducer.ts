@@ -1,5 +1,5 @@
 import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { getCategories, getProduct, getProducts } from "../../../services/fetch";
+import { getProduct, getProducts } from "../../../services/fetch";
 import { RootState } from "../store";
 
 interface ProductState {
@@ -18,7 +18,6 @@ const initialState: ProductState = {
 
 export const fetchProducts = createAsyncThunk("products/fetchAll", getProducts);
 export const fetchProduct = createAsyncThunk("products/fetchOne", getProduct);
-export const fetchCategories = createAsyncThunk("categories/fetchAll", getCategories);
 
 const productsSlice = createSlice({
   name: "products",
