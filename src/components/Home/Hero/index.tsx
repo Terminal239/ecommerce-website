@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="flex-1">
           <picture>
             <source media="(min-width:1024px)" srcSet="/hero-image.png" />
-            <img width={200} height={300} src="/hero-image-mobile.png" alt="Flowers" className="mx-auto md:w-4/5 lg:w-full" />
+            <img width={300} height={550} src="/hero-image-mobile.png" alt="Flowers" className="mx-auto w-full sm:w-4/5 lg:w-full" />
           </picture>
         </div>
       </MaxWidthWrapper>
