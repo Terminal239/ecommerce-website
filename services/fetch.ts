@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://192.168.1.12:5000";
+const BASE_URL = "";
 
 const getProducts = async (): Promise<Product[]> => {
   const response = await axios.get<Product[]>(`${BASE_URL}/api/products`);
