@@ -3,7 +3,7 @@ import { formatCurrency } from "../../../utils/helper";
 
 const ProductCard = ({ id, title, image, rating, discountedPrice, price, discountPercentage }: Product) => {
   return (
-    <div key={title} className="flex  flex-col rounded border p-4 pr-8 hover:shadow md:h-[456px]">
+    <div key={title} className="flex flex-col rounded border p-4 pr-8 hover:shadow">
       <div className="mx-auto mb-8 flex size-[196px] items-center justify-center md:size-[220px]">
         <img className="mx-auto size-full object-contain px-8" src={image} alt={title} />
       </div>

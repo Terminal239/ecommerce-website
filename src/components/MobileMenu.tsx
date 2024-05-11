@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { removeUser } from "../app/features/appSlice";
-import { useAppDispatch } from "../app/hooks";
+import { useAppDispatch } from "../store/hooks";
 import Button from "./Resuable/Button";
+import { removeUser } from "../store/reducers/userReducer";
 
 interface Props {
   cart: CartItem[];
@@ -15,7 +15,7 @@ const MobileMenu: React.FC<Props> = ({ cart, user, setshowMobileNav }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="fixed inset-y-0 left-32 right-0 bg-white px-6 py-8 shadow">
+    <div className="fixed inset-y-0 left-32 right-0 bg-white px-6 py-8 shadow sm:left-1/2">
       <div className="flex flex-col gap-4">
         {user ? (
           <>

@@ -1,12 +1,16 @@
+import { useWindowSize } from "@uidotdev/usehooks";
 import { FormEvent, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useNavigate } from "react-router-dom";
-import { getCart, getFilter, getUser, removeUser, updateSearchTerm } from "../app/features/appSlice";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { getCart, resetCart } from "../store/reducers/cartReducer";
+import { getFilter, updateSearchTerm } from "../store/reducers/filterReducer";
+import { getUser, removeUser } from "../store/reducers/userReducer";
 import MobileMenu from "./MobileMenu";
 import Button from "./Resuable/Button";
 
 const Header = () => {
+  const { width } = useWindowSize();
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const user = useAppSelector(getUser);
@@ -29,6 +33,12 @@ const Header = () => {
 
     dispatch(updateSearchTerm(term));
     navigate("/products");
+  };
+
+  const onSignOut = () => {
+    dispatch(removeUser());
+    dispatch(resetCart());
+    localStorage.removeItem("user");
   };
 
   useEffect(() => {
@@ -79,7 +89,7 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <Button onClick={() => dispatch(removeUser())} type="primary">
+              <Button onClick={() => onSignOut()} type="primary">
                 Logout
               </Button>
             </>
@@ -104,8 +114,8 @@ const Header = () => {
           Search
         </Button>
       </div>
-      {showMobileNav && createPortal(<div onClick={() => setshowMobileNav(false)} className="fixed inset-0 bg-black/50"></div>, document.body)}
-      {showMobileNav && createPortal(<MobileMenu setshowMobileNav={setshowMobileNav} user={user} cart={cart} />, document.body)}
+      {width! < 1024 && showMobileNav && createPortal(<div onClick={() => setshowMobileNav(false)} className="fixed inset-0 bg-black/50"></div>, document.body)}
+      {width! < 1024 && showMobileNav && createPortal(<MobileMenu setshowMobileNav={setshowMobileNav} user={user} cart={cart} />, document.body)}
     </header>
   );
 };

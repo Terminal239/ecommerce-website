@@ -50,7 +50,7 @@ const SocialProof = () => {
         </div>
         <div className="grid gap-6 md:grid-cols-2 md:gap-y-12">
           {reviews.map(({ comment, name, rating }) => (
-            <article className="relative border p-6 lg:pb-8">
+            <article key={name} className="relative border p-6 lg:pb-8">
               <div className="mb-4 flex items-center gap-4 lg:mb-6">
                 <div className="flex size-10 items-center justify-center rounded-full border bg-white lg:size-14">
                   <i className={`fa-solid fa-user lg:text-lg`}></i>

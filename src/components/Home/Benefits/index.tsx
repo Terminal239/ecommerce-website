@@ -40,7 +40,7 @@ const Benefits = () => {
         </div>
         <div className="grid gap-x-8 gap-y-12 md:grid-cols-2">
           {features.map(({ description, title, icon }) => (
-            <article className="relative border p-6 pb-8 pt-12 text-center md:text-left">
+            <article key={title} className="relative border p-6 pb-8 pt-12 text-center md:text-left">
               <div className="absolute left-1/2 top-0 mb-6 flex size-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border bg-white md:left-auto md:translate-x-0 ">
                 <i className={`fa-solid ${icon} text-3xl`}></i>
               </div>

@@ -21,8 +21,8 @@ const getCategories = async (): Promise<string[]> => {
   return response.data;
 };
 
-const getCart = async (): Promise<string[]> => {
-  const response = await axios.get<string[]>(`${BASE_URL}/api/cart`);
+const getCartItems = async (token: string): Promise<CartItem[]> => {
+  const response = await axios.get<CartItem[]>(`${BASE_URL}/api/cart`, { headers: { Authorization: `Bearer ${token}` } });
   return response.data;
 };
 
@@ -46,14 +46,14 @@ const onItemCountDecrement = async ({ id, token }: { id: string; token: string }
   return response.data;
 };
 
-const onUserLogin = async (email: string, password: string): Promise<LoginResponse> => {
-  const response = await axios.post<LoginResponse>(`${BASE_URL}/api/auth/login`, { email, password });
+const onUserLogin = async (email: string, password: string): Promise<User> => {
+  const response = await axios.post<User>(`${BASE_URL}/api/auth/login`, { email, password });
   return response.data;
 };
 
-const onUserSignUp = async (): Promise<string[]> => {
-  const response = await axios.post<string[]>(`${BASE_URL}/api/auth/signup`);
+const onUserSignUp = async (email: string, password: string, username: string): Promise<User> => {
+  const response = await axios.post<User>(`${BASE_URL}/api/auth/signup`, { email, password, username });
   return response.data;
 };
 
-export { getBestSellers, getCart, getCategories, getProduct, getProducts, onAddToCart, onDeleteFromCart, onItemCountDecrement, onItemCountIncrement, onUserLogin, onUserSignUp };
+export { getBestSellers, getCartItems, getCategories, getProduct, getProducts, onAddToCart, onDeleteFromCart, onItemCountDecrement, onItemCountIncrement, onUserLogin, onUserSignUp };

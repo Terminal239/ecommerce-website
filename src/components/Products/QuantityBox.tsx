@@ -1,5 +1,7 @@
-import { addItemToCart, decrementItemCount, getAllProducts, getCart, getUser, incrementItemCount } from "../../app/features/appSlice";
-import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { addItemToCart, decrementItemCount, getCart, incrementItemCount } from "../../store/reducers/cartReducer";
+import { getAllProducts } from "../../store/reducers/productsReducer";
+import { getUser } from "../../store/reducers/userReducer";
 
 interface Props {
   cartId?: string;
@@ -16,7 +18,6 @@ const QuantityBox: React.FC<Props> = ({ cartId, productId, size, count }) => {
 
   const onClickIncrementCount = () => {
     const item = cart.find((item) => item.id === cartId);
-    console.log(item);
     if (!item) {
       const product = products.find((item) => item.id === productId)!;
       dispatch(addItemToCart({ id: product.id, token: user!.token }));

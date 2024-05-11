@@ -1,9 +1,10 @@
 import { AxiosError } from "axios";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { onUserLogin } from "../../../services/fetch";
-import { setUser } from "../../app/features/appSlice";
+import { onUserLogin, onUserSignUp } from "../../../services/fetch";
+import { useAppDispatch } from "../../store/hooks";
+import { fetchCart } from "../../store/reducers/cartReducer";
+import { setUser } from "../../store/reducers/userReducer";
 import Button from "../Resuable/Button";
 import Login from "./Login";
 import SignUp from "./SignUp";
@@ -16,7 +17,7 @@ export interface FormData {
 
 const Auth = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState<FormData>({
     email: "",
@@ -30,10 +31,21 @@ const Auth = () => {
 
     try {
       setLoading(true);
-      const response = await onUserLogin(formData.email, formData.password);
-      setLoading(false);
-      dispatch(setUser(response));
+
+      if (isLogin) {
+        const response = await onUserLogin(formData.email, formData.password);
+        localStorage.setItem("user", JSON.stringify(response));
+        dispatch(setUser(response));
+        dispatch(fetchCart(response.token));
+      } else {
+        const response = await onUserSignUp(formData.email, formData.password, formData.username);
+        localStorage.setItem("user", JSON.stringify(response));
+        dispatch(setUser(response));
+        dispatch(fetchCart(response.token));
+      }
+
       navigate("/products");
+      setLoading(false);
     } catch (error) {
       if (error instanceof AxiosError) console.log(error.message);
     }

@@ -2,15 +2,17 @@ import { AxiosError } from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { formatCurrency } from "../../../utils/helper";
-import { addItemToCart, fetchProduct, getCart, getSelectedProduct, getStatus, getUser } from "../../app/features/appSlice";
-import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
 
+import { addItemToCart, getCart } from "../../store/reducers/cartReducer";
+import { fetchProduct, getProductStatus, getSelectedProduct } from "../../store/reducers/productsReducer";
+import { getUser } from "../../store/reducers/userReducer";
 import Button from "../Resuable/Button";
 import QuantityBox from "./QuantityBox";
 
 const ProductPage = () => {
   const dispatch = useAppDispatch();
-  const status = useAppSelector(getStatus);
+  const status = useAppSelector(getProductStatus);
   const user = useAppSelector(getUser);
   const cart = useAppSelector(getCart);
   const product = useAppSelector(getSelectedProduct);

@@ -29,13 +29,6 @@ interface CartItem {
   item: Product;
 }
 
-interface LoginResponse {
-  token: string;
-  email: string;
-  username: string;
-  cart: CartItem[];
-}
-
 interface User {
   username: string;
   email: string;

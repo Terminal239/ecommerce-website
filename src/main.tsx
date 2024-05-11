@@ -3,15 +3,15 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.tsx";
-import Products from "./components/Products/Products.tsx";
-import ProductPage from "./components/Products/ProductPage.tsx";
 import Cart from "./components/Cart.tsx";
+import ProductPage from "./components/Products/ProductPage.tsx";
+import Products from "./components/Products/Products.tsx";
 import "./index.css";
 
 import { Provider } from "react-redux";
-import { store } from "./app/store";
 import Auth from "./components/Auth/Auth.tsx";
 import { Home } from "./components/Home/index.tsx";
+import { store } from "./store/store.ts";
 
 const router = createBrowserRouter([
   {

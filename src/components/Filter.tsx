@@ -1,7 +1,8 @@
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useEffect, useState } from "react";
-import { fetchCategories, getAllCategories, getFilter, getStatus, resetFilter, updateCategories, updateRange, updateRatings } from "../app/features/appSlice";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { getCategories, getFilter, resetFilter, updateCategories, updateRange, updateRatings } from "../store/reducers/filterReducer";
+import { fetchCategories, getProductStatus } from "../store/reducers/productsReducer";
 import Button from "./Resuable/Button";
 
 const MAX_STARS = 5;
@@ -9,14 +10,14 @@ const STARS = [5, 4, 3, 2, 1];
 
 const Categories = () => {
   const dispatch = useAppDispatch();
-  const categories = useAppSelector(getAllCategories);
-  const status = useAppSelector(getStatus);
+  const categories = useAppSelector(getCategories);
+  const status = useAppSelector(getProductStatus);
 
   const { categories: selected } = useAppSelector(getFilter);
   const onCategoryClick = (category: string) => dispatch(updateCategories(category));
 
   useEffect(() => {
-    if (categories.length === 0 && status !== "error") dispatch(fetchCategories());
+    if (categories.length === 0 && status !== "error") dispatch(fetchCategories);
   }, []);
 
   return (

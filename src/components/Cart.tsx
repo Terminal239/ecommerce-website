@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { formatCurrency } from "../../utils/helper";
-import { deleteItemFromCart, getCart, getUser } from "../app/features/appSlice";
-import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { deleteItemFromCart, getCart } from "../store/reducers/cartReducer";
+import { getUser } from "../store/reducers/userReducer";
 import QuantityBox from "./Products/QuantityBox";
 import Button from "./Resuable/Button";
 
@@ -28,7 +29,7 @@ const Cart = () => {
 
   return (
     <section className="mx-auto mb-8 grid max-w-[1300px] gap-4 md:grid-cols-cart">
-      <div className="mx-4 rounded md:border md:p-6 ">
+      <div className="mx-4 rounded ">
         {cart.length === 0 ? (
           <div className="flex h-full flex-col items-center justify-center gap-2 border py-8 md:gap-4">
             <i className="fa-solid fa-cart-shopping text-lg text-gray-600 md:text-4xl"></i>
@@ -42,8 +43,8 @@ const Cart = () => {
           </div>
         ) : (
           cart.map(({ item, count, id }) => (
-            <article key={item.id} className="mb-6 flex flex-col gap-6 border p-6 md:flex-row md:gap-12">
-              <img className="mx-auto w-[96px] object-scale-down md:mx-6" src={item.image} alt={item.title} />
+            <article key={item.id} className="mb-6 flex flex-col items-center gap-6 border p-6 min-[450px]:flex-row md:flex-row md:gap-12">
+              <img className="mx-6 w-[96px] object-scale-down" src={item.image} alt={item.title} />
               <div className="flex flex-col">
                 <p className="mb-2 text-base font-semibold md:text-xl">{item.title}</p>
                 <div className="mb-4 flex items-center text-[12px] capitalize">

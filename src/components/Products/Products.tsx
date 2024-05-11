@@ -1,13 +1,14 @@
 import { useEffect, useMemo } from "react";
-import { fetchProducts, getAllProducts, getFilter, getStatus } from "../../app/features/appSlice";
-import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { getFilter } from "../../store/reducers/filterReducer";
+import { fetchProducts, getAllProducts, getProductStatus } from "../../store/reducers/productsReducer";
 import Filter from "../Filter";
 import ProductCard from "./ProductCard";
 
 const Products = () => {
   const dispatch = useAppDispatch();
 
-  const status = useAppSelector(getStatus);
+  const status = useAppSelector(getProductStatus);
   const products = useAppSelector(getAllProducts);
   const filter = useAppSelector(getFilter);
 
